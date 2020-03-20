@@ -1,13 +1,12 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
-inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
+name: 'IP information'
+description: 'get the info at every trigger'
+
 outputs:
   time: # id of output
     description: 'The time we greeted you'
+outputs:
+  ipinf: # id of output
+    description: 'The shows the information of the current ip'
 runs:
   using: 'node12'
   main: 'index.js'
