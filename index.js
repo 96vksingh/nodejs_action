@@ -6,32 +6,6 @@ const publicIp = require('public-ip');
 const speedTest = require('speedtest-net');
 global.ip=""
 global.ipin=""
-const { exec } = require("child_process");
-exec("npm install --global speedtest-net", (error, stdout, stderr) => {
-  if (error) {
-      console.log(`error: ${error.message}`);
-      return;
-  }
-  if (stderr) {
-      console.log(`stderr: ${stderr}`);
-      return;
-  }
-  console.log(`stdout: ${stdout}`);
-});
-
-exec("speedtest-net --accept-license", (error, stdout, stderr) => {
-  if (error) {
-      console.log(`error: ${error.message}`);
-      return;
-  }
-  if (stderr) {
-      console.log(`stderr: ${stderr}`);
-      return;
-  }
-  console.log(`stdout: ${stdout}`);
-});
-
-
 try {
 
   (async () => {
@@ -56,15 +30,7 @@ try {
 
 })();
 
-(async () => {
-  try {
-    console.log(await speedTest(acceptLicense=true));
-  } catch (err) {
-    console.log(err.message);
-  } finally {
-    process.exit(0);
-  }
-})();
+
 
 
 } catch (error) {
