@@ -13,8 +13,8 @@ jobs:
       uses: ./
 
     # Use the output from the `ip` step
-    - name: Get the ip info 
-      run: echo "The ip information is ${{ steps.ip.output_ip.ipinf }}"
+    # - name: Get the ip info 
+    #   run: echo "The ip information is ${{ steps.ip.output_ip.ipinf }}"
     - name: time performed
       run: echo "The ip information tested at ${{ steps.ip.outputs.time }}"
       # run: echo "The ip information is ${{ steps.ip.outputs.ipinf }}"

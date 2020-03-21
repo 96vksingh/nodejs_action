@@ -4,9 +4,7 @@ description: 'get the info at every trigger'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
-output_ip:
-  ipinf: # id of output
-    description: 'The shows the information of the current ip'
+
 runs:
   using: 'node12'
   main: 'index.js'

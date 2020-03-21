@@ -21,7 +21,7 @@ try {
 // console.log(ipinf)
     const time = (new Date()).toTimeString();
     core.setOutput("time", time);
-    core.setOutput("ipinf",ipinf);
+    // core.setOutput("ipinf",ipinf);
     
     }
 
