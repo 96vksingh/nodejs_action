@@ -10,6 +10,6 @@ jobs:
       uses: actions/nodejs_action@v1
 
     # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.ip.outputs.time }}"
-      run: echo "The ip information is ${{ steps.ip.outputs.ipinf }}"
+    - name: Get the ip info 
+      run: echo "The time was ${{ steps.ip.outputs.ipinf }}"
+      # run: echo "The ip information is ${{ steps.ip.outputs.ipinf }}"
