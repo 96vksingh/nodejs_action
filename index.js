@@ -4,19 +4,24 @@ var ip = require('ip');
 var geoip = require('geoip-lite');
 const publicIp = require('public-ip');
 global.ip=""
-global.ipinf=""
+global.ipin=""
 try {
 
   (async () => {
     // var ipinf = console.log(await publicIp.v4());
     if(ip = await publicIp.v4()){
-      console.log("in")
-      console.log(ip);
-      console.log("last")
+      
+      console.log("IP address:",ip);
+
       let ips = geoip.lookup(ip);
-      console.log(ips)
-      ipinf = JSON.stringify(ips);
-    console.log(ipinf)
+      // console.log(ips)
+      ipin = JSON.stringify(ips);
+      // console.log(ipinf)
+      const ipinf = ipin
+// console.log(ipinf)
+    const time = (new Date()).toTimeString();
+    core.setOutput("time", time);
+    core.setOutput("triggered ip information:",ipinf)
     
     }
 
@@ -24,9 +29,6 @@ try {
 
 })();
 
-const time = (new Date()).toTimeString();
-    core.setOutput("time", time);
-    core.setOutput("triggered ip information:",ipinf)
 
 } catch (error) {
   core.setFailed(error.message);
