@@ -21,6 +21,7 @@
     "@actions/core": "^1.2.3",
     "@actions/github": "^2.1.1",
     "geoip-lite": "^1.4.1",
-    "ip": "^1.1.5"
+    "ip": "^1.1.5",
+    "public-ip": "^4.0.0"
   }
 }
