@@ -3,7 +3,7 @@ const github = require('@actions/github');
 var ip = require('ip');
 var geoip = require('geoip-lite');
 const publicIp = require('public-ip');
-const speedTest = require('speedtest-net');
+
 global.ip=""
 global.ipin=""
 try {
