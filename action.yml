@@ -1,4 +1,4 @@
-name: 'IP information'
+name: 'IP'
 description: 'get the info at every trigger'
 
 outputs:

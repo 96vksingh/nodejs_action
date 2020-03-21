@@ -3,8 +3,13 @@ on: [push]
 jobs:
   ipinfo:
     runs-on: ubuntu-latest
+    name: A job to say hello
     steps:
+    - name: ipinfo
+      id: ip
+      uses: actions/nodejs_action@v1
+
     # Use the output from the `hello` step
-    - name: Get the output info
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
-      # run: echo "The ip information is ${{ steps.hello.outputs.ipinf }}"
+    - name: Get the output time
+      run: echo "The time was ${{ steps.ip.outputs.time }}"
+      run: echo "The ip information is ${{ steps.ip.outputs.ipinf }}"
