@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to find ip information
     steps:
-      - uses: actions/checkout@v1
-      - run: |
-          git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
+    - name: github
+      uses: actions/checkout@v1
+      
     - name: ipinfo
       id: ip
       uses: ./
