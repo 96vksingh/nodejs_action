@@ -10,6 +10,6 @@ This action prints ip information to the log.
 The time it triggered.
 
 
-### `ipinf`
-The information of the ip address during that time.
+### `ip info`
+The information of the ip address during the time when action workflow is processing.
 
