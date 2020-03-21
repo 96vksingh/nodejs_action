@@ -16,7 +16,7 @@ try {
       let ips = geoip.lookup(ip);
       // console.log(ips)
       ipin = JSON.stringify(ips);
-      // console.log(ipinf)
+      console.log(ipin)
       const ipinf = ipin
 // console.log(ipinf)
     const time = (new Date()).toTimeString();
