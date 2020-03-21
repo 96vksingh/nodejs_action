@@ -7,4 +7,4 @@ jobs:
     # Use the output from the `hello` step
     - name: Get the output info
       run: echo "The time was ${{ steps.hello.outputs.time }}"
-      run: echo "The ip information is ${{ steps.hello.outputs.ipinf }}"
+      # run: echo "The ip information is ${{ steps.hello.outputs.ipinf }}"
